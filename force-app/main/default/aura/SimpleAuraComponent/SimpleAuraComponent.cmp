@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <aura:attribute name="person" type="String" default="World" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <br/><br/><lightning:input name="InputText" aura:id="InputText"
+        label="Name" value=""/>
+    <br/><br/> <lightning:button variant="brand" label="Click here to say Hello"
+title="Say Hello Title" onclick="{! c.SayHello }" />
+    <br/><br/>Hello {!v.person} from Aura Component !!*/
+</aura:component>	
